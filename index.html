@@ -3,10 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ricordi di Parigi</title>
+    <title>Dedica per una persona speciale</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background: linear-gradient(135deg, #ffe6f2 0%, #fff0f7 100%);
+            color: #333;
+            text-align: center;
+            padding: 2rem;
+        }
+        .card {
+            background: #ffe6f2;
+            border: 2px dashed #ff99cc;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            display: inline-block;
+            padding: 2rem;
+            max-width: 600px;
+            position: relative;
+        }
+        .card::before {
+            content: '💖';
+            font-size: 2rem;
+            position: absolute;
+            top: -1rem;
+            left: -1rem;
+        }
+        .card::after {
+            content: '🌸';
+            font-size: 2rem;
+            position: absolute;
+            bottom: -1rem;
+            right: -1rem;
+        }
+        h1 {
+            color: #d14;
+            font-size: 2.5rem;
+        }
+        p {
+            line-height: 1.6;
+            margin: 1rem 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>Ricordi di Parigi</h1>
-    <p>Ti ricordi di quando siamo andati a Parigi per una settimana nell'estate del 2023 e abbiamo visitato i monumenti più importanti e Disneyland? Io sì e ti voglio far vedere delle foto.</p>
+    <div class="card">
+        <h1>Dedica speciale per la mia mamma</h1>
+        <p>💐 Cara mamma,</p>
+        <p>Questo piccolo spazio è tutto per te: colorato, pieno di cuori e parole dolci.</p>
+        <p>Sei la rosa più bella del mio giardino, il mio sole ogni giorno. Grazie per il tuo amore infinito e per rendere ogni momento speciale.</p>
+        <p>Con tutto il mio amore,<br>la tua figlia</p>
+    </div>
 </body>
 </html>
