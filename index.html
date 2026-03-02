@@ -44,15 +44,31 @@
             line-height: 1.6;
             margin: 1rem 0;
         }
+        .floating-heart {
+            position: fixed;
+            font-size: 2rem;
+            animation: float 5s infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0) translateX(0); opacity: 1; }
+            50% { opacity: 0.7; }
+            100% { transform: translateY(-100vh) translateX(50px); opacity: 0; }
+        }
     </style>
 </head>
 <body>
     <div class="card">
+        <!-- photo: place your image at foto/mamma.jpg -->
+        <img src="foto/mamma.jpg" alt="Foto della mamma" style="max-width:100%;border-radius:10px;margin-bottom:1rem;" />
         <h1>Dedica speciale per la mia mamma</h1>
         <p>💐 Cara mamma,</p>
         <p>Questo piccolo spazio è tutto per te: colorato, pieno di cuori e parole dolci.</p>
         <p>Sei la rosa più bella del mio giardino, il mio sole ogni giorno. Grazie per il tuo amore infinito e per rendere ogni momento speciale.</p>
         <p>Con tutto il mio amore,<br>la tua figlia</p>
     </div>
+    <!-- floating hearts animation -->
+    <div class="floating-heart">❤️</div>
+    <div class="floating-heart">❤️</div>
+    <div class="floating-heart">❤️</div>
 </body>
 </html>
